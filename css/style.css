@@ -114,9 +114,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 34px;
     background-color: #1B1B1B;
     height: 53px;
+}
+
+nav>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 72%;
+    padding: 17px;
+}
+
+nav>div:hover {
+    background-color: #8e8e8e;
 }
 
 nav a {
@@ -125,7 +136,6 @@ nav a {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
 }
 
 #search {
@@ -259,6 +269,18 @@ nav a {
     text-decoration: none;
 }
 
+.products .product .purchase>a:hover {
+    height: 34px;
+    width: 97px;
+    color: #FF0000;
+    text-align: center;
+    line-height: 34px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    background-color: #8f8c8c;
+}
+
 
 /*#endregion product-rack*/
 
@@ -293,8 +315,38 @@ footer .media-bar>div {
     gap: 10px;
 }
 
-footer .media-bar>.icons {
-    gap: 23px;
+footer .media-bar>#search2>svg {
+    fill: #AF0101;
+}
+
+footer .media-bar>#search2:hover {
+    color: #C10A0A;
+    cursor: pointer;
+}
+
+footer .media-bar>#search2:hover>svg {
+    fill: #dd5353;
+}
+
+footer .media-bar>.icons>.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+}
+
+footer .media-bar>.icons>.icon:hover {
+    background-color: #C10A0A;
+}
+
+footer .media-bar>.icons>.icon:hover>svg {
+    stroke: #e7e7e7;
+}
+
+footer .media-bar>.icons svg {
+    stroke: #c10a0a;
 }
 
 footer .link-groups {
@@ -311,8 +363,8 @@ footer .link-group {
 footer .link-group .link {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
-    color: rgb(172, 172, 172);
+    font-weight: lighter;
+    color: rgb(184, 184, 184);
     text-decoration: none;
 }
 
